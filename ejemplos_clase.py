@@ -30,6 +30,7 @@ def numbers():
     print('El resultado de restar', numero_1, 'y', numero_2, 'es', resta)
 
     # ¿Qué sucede si una variable no fue definida e intento imprimir su valor?
+    # Respuesta: Se generará un error en la consola, indicando que esa variable no está definida.
     # print('El valor de numero es',numero)
 
     # Ahora realizaremos ejemplos con números reales
@@ -49,7 +50,7 @@ def numbers():
 
     suma = numero_3 + numero_1   # Operamos la suma
     # Imprimimos en consola el resultado
-    print('El resultado sumar', numero_3, 'y', numero_1, 'es', suma)
+    print('El resultado de sumar', numero_3, 'y', numero_1, 'es', suma)
 
     resta = numero_3 - numero_1  # Operamos la resta
 
@@ -58,7 +59,7 @@ def numbers():
 
     # Ensayo de división de números decimales
     division = numero_1 / numero_2
-    print('El resultado dividir', numero_1, 'y', numero_2, 'es', division)
+    print('El resultado de dividir', numero_1, 'y', numero_2, 'es', division)
 
 
 def strings():

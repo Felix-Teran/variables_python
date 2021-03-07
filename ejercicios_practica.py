@@ -119,7 +119,7 @@ def ej5():
     # De la segunda palabra tome las últimas tres letras, utilice el operador :
     # Formar una nueva palabra con los recortes solicitados
     # Imprima en pantalla los resultados
-    primera = palabra_1[0:3]
+    primera = palabra_1[:3]
     segunda = palabra_2[-3:]
     print(primera, segunda)
     print(segunda, primera)
