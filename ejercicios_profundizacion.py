@@ -34,6 +34,20 @@ def ej1():
       ej: La suma entre 4.2 y 6.5 es 10.7
 
     '''
+    print("Ingrese el primer número")
+    numero_1 = float(input())
+    print("Ingrese el segundo número")
+    numero_2 = float(input())
+    result_suma = numero_1 + numero_2
+    result_resta = numero_1 - numero_2
+    result_multi = numero_1 * numero_2
+    result_divi = numero_1 / numero_2
+    result_expon = numero_1 ** numero_2
+    print("La suma entre", numero_1, "y", numero_2, "es", result_suma, "\n"
+          "La resta entre", numero_1, "y", numero_2, "es", result_resta, "\n"
+          "La multiplicacion entre", numero_1, "y", numero_2, "es", result_multi, "\n"
+          "La division entre", numero_1, "y", numero_2, "es", result_divi, "\n"
+          "El resultado de", numero_1, "elevado a", numero_2, "es", result_expon, "\n")
 
 
 def ej2():
@@ -55,7 +69,16 @@ def ej2():
       entienda de que se está hablando.
 
     '''
-
+    print("Por favor, indicanos cuál es tu nombre completo?")
+    name_compl = str(input())
+    print("Bien, ahora tu DNI")
+    dni = str(input())
+    print("Falta poco! Cuál es tu edad? (No nos engañes jaja)")
+    age = int(input())
+    print("Y por último, cuánto mides?")
+    h = float(input())
+    print("Nombre Completo:", name_compl, ", DNI:", dni, "\n"
+          "Nombre Completo:", name_compl, ", Edad:", age, ", Altura:", h)
 
 def ej3():
     print('Ejercicios de práctica con cadenas')
@@ -89,6 +112,25 @@ def ej3():
     Cualquier duda con el método split pueden consultarla por el campus
 
     '''
+    '''
+    Quisiera profundizar un poco más ya que en Venezuela, por ejemplo, el
+    común denominador es que el nombre completo esté compuesto por 
+    4 elementos 2 Nombres y 2 Apellidos (3 si contamos en binario xD).
+    
+    Por lo tanto, necesitaría un condicional en el que, si la lista luego
+    del split() contiene 3 elementos, el apellido sea igual [2] '''
+
+    print("Cuál es el primer Nombre y Apellido de tu Padre")
+    padre = str(input())
+    padre.split()
+    nom_padre, apellido_padre = padre.split()
+    print("Cuál es el primer Nombre y Apellido de tu Madre")
+    madre = str(input())
+    madre.split()
+    nom_madre, apellido_madre = madre.split()
+    print("Cuál es tu nombre?")
+    nom_hijo = str(input())
+    print("Tu nombre es:", nom_hijo.capitalize(), apellido_padre.capitalize(), apellido_madre.capitalize())
 
 
 def ej4():
@@ -123,6 +165,16 @@ def ej4():
 
     Cualquier duda con el método split pueden consultarla por el campus
     '''
+    print("Son PARIENTES?")
+    print("Nombre y Apellido de la 1ra. Persona")
+    persona_1 = str(input())
+    print("Nombre y Apellido de la 2da. Persona")
+    persona_2 = str(input())
+    nombre_2, apellido_2 = persona_2.split()
+    if apellido_2 in persona_1:
+      print("Felicidades, son PARIENTES")
+    else:
+      print("Harina de otro costal jaja, NO SON PARIENTES")
 
 
 def ej5():
@@ -149,12 +201,18 @@ def ej5():
 
     Cualquier duda con estos métodos pueden consultarla por el campus
     '''
-
+    print("Cuál es tu nombre completo?")
+    nomb_compl = str(input())
+    nomb_compl.split()
+    nombre, apellido = nomb_compl.split()
+    print(nombre.lower(), apellido)
+    print(nombre.upper(), apellido)
+    print(nombre.capitalize(), apellido)
 
 if __name__ == '__main__':
     print("Ejercicios de práctica")
-    ej1()
-    # ej2()
-    # ej3()
-    # ej4()
-    # ej5()
+    #ej1()
+    #ej2()
+    #ej3()
+    #ej4()
+    ej5()
